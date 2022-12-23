@@ -1,0 +1,77 @@
+.container {
+  background-color: #aec6a5;
+  margin: 0 auto;
+  padding: 61px 50px 50px;
+  width: 320px;
+}
+.about__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  text-align: center;
+  text-transform: uppercase;
+}
+.about__how {
+  font-family: 'Seymour One';
+  padding-bottom: 12px;
+
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.about__description {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.about__text {
+  font-size: 12px;
+  line-height: calc(21 / 12);
+  letter-spacing: 0.04em;
+  padding-bottom: 4px;
+}
+.about__text2 {
+  font-size: 12px;
+  line-height: calc(19 / 12);
+}
+.about__img {
+  max-width: 279px;
+}
+.about__img-box {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+}
+.about__btn {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  padding: 12px 34px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.about__btn:link {
+  color: #000;
+  background-color: #f8d24e;
+}
+.about__btn:hover {
+  color: #000;
+  background-color: #0a8817;
+}
+.about__btn:active {
+  color: #fcfcfc;
+  background-color: #0a8817;
+}
+.about__btn:visited {
+  color: #000;
+  background-color: #ababab;
+}
