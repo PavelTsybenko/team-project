@@ -1,0 +1,33 @@
+.product {
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  &__lable {
+    margin-bottom: 12px;
+  }
+  &__title {
+    @media screen and (max-width: 767px) {
+      padding-bottom: 148px;
+    }
+    @media screen and (max-width: 120px) {
+      padding-bottom: 200px;
+    }
+    @media screen and (max-width: 1200px) {
+      padding-bottom: 303px;
+    }
+  }
+  &__card-set {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+    &__item {
+    }
+    &__title {
+    }
+    &__text {
+    }
+    &__btn {
+    }
+  }
+}
