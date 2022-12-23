@@ -1,21 +1,38 @@
-.container {
+.about {
   background-color: #aec6a5;
-  margin: 0 auto;
-  padding: 61px 50px 50px;
-  width: 320px;
+  color: #fcfcfc;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.container-flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 38px;
+  }
 }
 .about__title {
-  font-family: 'Seymour One';
   font-style: normal;
-
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+    letter-spacing: 0.04em;
+  }
   font-size: 18px;
   line-height: calc(22 / 18);
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 12px;
 }
 .about__how {
   font-family: 'Seymour One';
-  padding-bottom: 12px;
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 72px;
+    font-size: 34px;
+    line-height: calc(43 / 34);
+    letter-spacing: 0.06em;
+  }
 
   font-size: 30px;
   line-height: calc(38 / 30);
@@ -23,30 +40,61 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-.about__description {
+.container-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+  }
 }
 
 .about__text {
   font-size: 12px;
   line-height: calc(21 / 12);
   letter-spacing: 0.04em;
-  padding-bottom: 4px;
+}
+.about__text1 {
+  margin-bottom: 4px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 8px;
+  }
 }
 .about__text2 {
   font-size: 12px;
   line-height: calc(19 / 12);
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    line-height: calc(21 / 12);
+    margin-bottom: 8px;
+  }
 }
+.about__text3 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  line-height: calc(23 / 12);
+  margin-bottom: 32px;
+}
+
 .about__img {
-  max-width: 279px;
+  max-width: 290px;
+  @media screen and (min-width: 768px) {
+    max-width: 330px;
+  }
 }
+
 .about__img-box {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: auto;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
+
 .about__btn {
   display: inline-block;
   text-decoration: none;
