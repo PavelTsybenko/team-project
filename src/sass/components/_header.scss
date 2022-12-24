@@ -31,28 +31,28 @@
 .header__logo {
   width: 40px;
   height: 37px;
-  background-image: url("../images/logo/logo-mob.png");
+  background-image: url("../images/header/logo-mob.png");
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url("../images/logo/logo-mob@2x.png");
+    background-image: url("../images/header/logo-mob@2x.png");
   }
 
   @media screen and (min-width: 768px) {
     width: 48px;
     height: 44px;
-    background-image: url("../images/logo/logo-tab.png");
+    background-image: url("../images/header/logo-tab.png");
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url("../images/logo/logo-tab@2x.png");
+      background-image: url("../images/header/logo-tab@2x.png");
     }
   }
 
   @media screen and (min-width: 1200px) {
     width: 60px;
     height: 65px;
-    background-image: url("../images/logo/logo-desktop.png");
+    background-image: url("../images/header/logo-desktop.png");
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url("../images/logo/logo-desktop@2x.png");
+      background-image: url("../images/header/logo-desktop@2x.png");
     }
   }
 
