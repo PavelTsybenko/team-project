@@ -1,0 +1,98 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.reviews__wrap {
+    background-image: url("/src/images/reviews/backgroud_mobile.jpg");
+    margin: 0 auto;
+    padding: 61px 50px 50px;
+    width: 320px;
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url("/src/images/reviews/backgroud_mobile@2x.jpg");
+    }
+    
+    @media screen and (min-width: 768px) {
+        background-image: url("/src/images/reviews/background_tablet.jpg");
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url("/src/images/reviews/background_tablet@2x.jpg");
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        background-image: url("/src/images/reviews/backgroud_desktop.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url("/src/images/reviews/backgroud_desktop@2x.jpg");
+        }
+    }
+}
+
+.slider-img__item {
+    margin-bottom: 80px;
+}
+.slider-img__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviewer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.slider__img {
+    min-width: 280px;
+    border-radius: 8px;
+}
+.slider-ppl__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviewer__img {
+    padding-bottom: 32px;
+    width: 85px;
+    border-radius: 39%;
+}
+.reviewer_wrap {
+    width: 280px;
+    background-color: #84A178;
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+.reviewer__comment {
+    text-align: center;
+    color: #FCFCFC;
+    padding: 35px 39px;
+    font-size: 12px;
+    line-height: calc(32 / 12);
+    letter-spacing: 0.04em;
+}
+
+.reviewer__info {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+    /* or 37px */
+
+    text-align: center;
+
+    color: #131313;
+    padding: 12px;
+}
