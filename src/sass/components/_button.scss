@@ -183,9 +183,7 @@
 
   &:focus {
      color: #fff;
-    &::after {
-      background-image: url("/src/images/button/button-arrow-w.svg");
-    }
+   fill: #fff;
   }
 
   &--disabled {
