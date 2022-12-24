@@ -71,24 +71,15 @@
 
 /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
 
-a {
-   padding: 20px;
-   display: inline-block;
-   text-decoration: none;
-   background-color: #414b52;
-   margin: 10px;
-   color: #fff;
-   border-radius: 3px;
-}
-
-
-
-
-
-
-
-
-
+// a {
+//    padding: 20px;
+//    display: inline-block;
+//    text-decoration: none;
+//    background-color: #414b52;
+//    margin: 10px;
+//    color: #fff;
+//    border-radius: 3px;
+// }
 
 
 
@@ -125,27 +116,27 @@ a {
   border-radius: 10px;
 }
 
-// .modal-close-btn {
-//   position: absolute;
-//   top: 12px;
-//   right: 12px;
-//   display: block;
-//   width: 20px;
-//   height: 20px;
-//   border: none;
-//   background-color: transparent;
-//   transition: box-shadowLL;
-// }
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  transition: box-shadowLL;
+}
 
-// .close-btn-icon {
-//   width: 11px;
-//   height: 11px;
-// }
+.close-btn-icon {
+  width: 11px;
+  height: 11px;
+}
 
-// .modal-close-btn:hover,
-// .modal-close-btn:focus {
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-// }
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .modal-title {
   margin-top: 0;
