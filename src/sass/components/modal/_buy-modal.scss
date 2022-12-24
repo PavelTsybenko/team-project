@@ -79,8 +79,8 @@
   }
 
   text-align: center;
-  background-color: #fcfcfc;
-  border: 2px solid #f8d24e;
+  background-color: $second;
+  border: 2px solid $accent;
   border-radius: 10px;
 
   &__close-btn {
@@ -93,12 +93,12 @@
     width: 20px;
     height: 20px;
 
-    fill: #131313;
-    background-color: #fcfcfc;
+    fill: $main;
+    background-color: $second;
 
     &:hover > .close-icon,
     &:focus > .close-icon {
-      fill: #f8d24e;
+      fill: $accent;
     }
     &__icon {
       transition-property: fill;
@@ -121,7 +121,7 @@
     text-align: center;
     justify-content: center;
     // цвет унифицировать и поменять на var или $
-    color: #131313;
+    color: $main;
 
     @media screen and (max-width: 767px) {
       margin-bottom: 83px;
@@ -183,13 +183,13 @@
       padding: 0;
 
       &:checked + .product-modal__checkbox-form__bgc {
-        background-color: #96af8c;
+        background-color: $modal-second;
       }
       &:checked + .bgc__yellow {
-        background-color: #efd478;
+        background-color: $card-bground-second;
       }
       &:checked + .bgc__brown {
-        background-color: #d6936d;
+        background-color: $accent-second;
       }
     }
     &__bgc {
@@ -199,23 +199,23 @@
       z-index: 29;
       width: 132px;
       height: 136px;
-      border: 2px solid #96af8c;
+      border: 2px solid $modal-second;
       filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
       border-radius: 15px;
     }
     &__text {
       margin: 0;
       padding: 0;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 700;
+      // font-family: 'Montserrat';
+      // font-style: normal;
+      font-weight: $secondary-text-weight;
       font-size: 16px;
       line-height: 1.25;
       text-align: center;
       letter-spacing: 0.04em;
       text-transform: uppercase;
 
-      color: #131313;
+      color: $main;
     }
     &__bg-circle {
       position: absolute;
@@ -262,7 +262,7 @@
       box-sizing: border-box;
 
       background: rgba(248, 210, 78, 0.1);
-      border: 1px solid #84a178;
+      border: 1px solid $background;
       border-radius: 10px;
 
       @media screen and (max-width: 767px) {
@@ -293,7 +293,7 @@
       resize: none;
 
       background: rgba(248, 210, 78, 0.1);
-      border: 1px solid #84a178;
+      border: 1px solid $background;
       border-radius: 10px;
 
       @media screen and (max-width: 767px) {
@@ -317,10 +317,10 @@
     padding: 12px 34px;
 
     // эти 2 строчки нужно унифицировать и убрать
-    font-family: 'Montserrat';
-    font-style: normal;
+    // font-family: 'Montserrat';
+    // font-style: normal;
 
-    font-weight: 600;
+    font-weight: $button-text-weight;
     font-size: 14px;
     line-height: 1.214;
     display: flex;
@@ -329,19 +329,19 @@
 
     border-radius: 10px;
     // цвет унифицировать и поменять на var или $
-    color: #131313;
-    background-color: #f8d24e;
+    color: $main;
+    background-color: $accent;
   }
 }
 // рамка чекбокса
 .bgc {
   &__yellow {
-    border: 2px solid #efd478;
+    border: 2px solid $card-bground-second;
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
     border-radius: 15px;
   }
   &__brown {
-    border: 2px solid #d6936d;
+    border: 2px solid $accent-second;
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
     border-radius: 15px;
   }
@@ -354,7 +354,7 @@
         rgba(156, 190, 143, 0.7),
         rgba(156, 190, 143, 0.7)
       ),
-      #d9d9d9;
+      $dots;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   }
 
@@ -364,7 +364,7 @@
         rgba(248, 210, 78, 0.7),
         rgba(248, 210, 78, 0.7)
       ),
-      #d9d9d9;
+      $dots;
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
   }
 
@@ -374,7 +374,7 @@
         rgba(213, 117, 63, 0.7),
         rgba(213, 117, 63, 0.7)
       ),
-      #d9d9d9;
+      $dots;
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
   }
 }
