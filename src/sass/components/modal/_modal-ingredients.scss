@@ -16,7 +16,6 @@
    transition: .3s all;
 }
 
-
 /* Стили для модальных окон */
 
 .modal {
@@ -46,7 +45,6 @@
    transition: 0.3s all;
 }
 
-
 /* Стили для активных классов подложки и окна */
 
 .modal.active,
@@ -54,7 +52,6 @@
    opacity: 1;
    visibility: visible;
 }
-
 
 /* Стили для кнопки закрытия */
 
@@ -70,18 +67,6 @@
 
 
 /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
-
-// a {
-//    padding: 20px;
-//    display: inline-block;
-//    text-decoration: none;
-//    background-color: #414b52;
-//    margin: 10px;
-//    color: #fff;
-//    border-radius: 3px;
-// }
-
-
 
 // .backdrop {
 //   position: fixed;
