@@ -55,8 +55,8 @@
   &__label {
     margin-bottom: 12px;
 
-    font-family: 'Montserrat';
-    font-style: normal;
+    // font-family: 'Montserrat';
+    // font-style: normal;
     font-weight: 800;
 
     font-size: 18px;
@@ -64,7 +64,7 @@
 
     text-align: center;
     text-transform: uppercase;
-    color: #131313;
+    color: $main;
 
     @media screen and (min-width: 768px) {
       font-size: 22px;
@@ -77,15 +77,15 @@
   }
   &__title {
     font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
+    // font-style: normal;
+    // font-weight: 400;
     font-size: 30px;
     line-height: 1.26;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: #131313;
+    color: $main;
     @media screen and (max-width: 767px) {
       margin-bottom: 148px;
     }
@@ -114,7 +114,7 @@
       display: inline-block;
 
       border-radius: 24px;
-      background-color: #aec6a5;
+      background-color: $background-accent;
       @media screen and (max-width: 767px) {
         // display: inline-block;
         padding-top: 123px;
@@ -197,16 +197,16 @@
     &__title {
       margin-bottom: 40px;
 
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 700;
+      // font-family: 'Montserrat';
+      // font-style: normal;
+      font-weight: $secondary-text-weight;
       font-size: 20px;
       line-height: 1.2;
       text-align: center;
       letter-spacing: 0.04em;
       text-transform: uppercase;
 
-      color: #131313;
+      color: $main;
       @media screen and (min-width: 768px) {
         font-size: 22px;
         line-height: 1.227;
@@ -219,15 +219,15 @@
       }
     }
     &__text {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
+      // font-family: 'Montserrat';
+      // font-style: normal;
+      // font-weight: 400;
       font-size: 14px;
       line-height: 176%;
       text-align: center;
       letter-spacing: 0.04em;
 
-      color: #131313;
+      color: $main;
       @media screen and (min-width: 1200px) {
         font-size: 16px;
       }
@@ -258,10 +258,10 @@
 // item bg color
 .item {
   &__yellow {
-    background-color: #efd478;
+    background-color: $card-bground-second;
   }
   &__brown {
-    background-color: #d6936d;
+    background-color: $accent-second;
   }
 }
 // circle color
@@ -272,7 +272,7 @@
         rgba(156, 190, 143, 0.7),
         rgba(156, 190, 143, 0.7)
       ),
-      #d9d9d9;
+      $dots;
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
   }
   &__yellow {
@@ -281,7 +281,7 @@
         rgba(248, 210, 78, 0.7),
         rgba(248, 210, 78, 0.7)
       ),
-      #d9d9d9;
+      $dots;
     box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
   }
   &__brown {
@@ -290,7 +290,7 @@
         rgba(213, 117, 63, 0.7),
         rgba(213, 117, 63, 0.7)
       ),
-      #d9d9d9;
+      $dots;
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
   }
 }
