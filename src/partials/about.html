@@ -2,37 +2,40 @@
   <div class="container">
     <h2 class="about__title">tradition and love</h2>
     <p class="about__how">how it’s made?</p>
-    <div class="about__img-box">
-      <img
-        srcset="
-          ./images/about/png_mobile.png     280w,
-          ./images/about/png_tablet.png     330w,
-          ./images/about/png_desktop.png    491w,
-          ./images/about/png_mobile@2x.png  560w,
-          ./images/about/png_tablet@2x.png  660w,
-          ./images/about/png_desktop@2x.png 982w
-        "
-        sizes="(min-widht: 1200px) 491px, (min-widht: 768px) 330px, (min-widht: 480px) 280px, 100vw"
-        src="./images/about/png_mobile.png"
-        alt="cow"
-        class="about__img"
-        width="280px"
-      />
+    <div class="about__container-flex">
+      <div class="about__img-box">
+        <img
+          srcset="
+            ./images/about/mobile-min.png     280w,
+            ./images/about/tablet-min.png     330w,
+            ./images/about/desktop-min.png    491w,
+            ./images/about/mobile@2x-min.png  560w,
+            ./images/about/tablet@2x-min.png  660w,
+            ./images/about/desktop@2x-min.png 982w
+          "
+          sizes="(min-widht: 1200px) 491px, (min-widht: 768px) 330px, (min-widht: 480px) 280px, 100vw"
+          src="./images/about/mobile-min.png"
+          alt="cow"
+          class="about__img"
+        />
+      </div>
+      <div class="about__container-wrap">
+        <p class="about__text about__text--textone">
+          Ice is a place where you will become not only a little happier, but
+          also healthier. Health is the main value for us, and we follow it when
+          creating our handmade desserts.
+        </p>
+        <p class="about__text about__text--texttwo">
+          We use traditional recipes and 100% natural ingredients. Our products
+          are so natural that they can be given to children from the age of
+          three years. Sweets lovers can expect 55 types of ice cream, 15 types
+          of coffee and 23 milkshakes.
+        </p>
+        <p class="about__text about__text--textthree">
+          This is enough to choose ice cream and coffee for any mood!
+        </p>
+        <a href="#" class="about__btn">Read more &#10095;</a>
+      </div>
     </div>
-    <blockquote class="about__description">
-      <p class="about__text">
-        Ice is a place where you will become not only a little happier, but also
-        healthier. Health is the main value for us, and we follow it when
-        creating our handmade desserts.
-      </p>
-      <p class="about__text2">
-        We use traditional recipes and 100% natural ingredients. Our products
-        are so natural that they can be given to children from the age of three
-        years. Sweets lovers can expect 55 types of ice cream, 15 types of
-        coffee and 23 milkshakes.
-      </p>
-    </blockquote>
-    <a href="#" class="about__btn">Read more</a>
-    <svg></svg>
   </div>
 </section>
