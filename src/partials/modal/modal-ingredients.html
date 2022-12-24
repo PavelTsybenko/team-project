@@ -1,0 +1,102 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg class="close-btn-icon">
+        <use href="/src/images/icon-sprite.svg#Vector"></use>
+      </svg>
+    </button>
+    <p class="modal-title">Chololate icecream</p>
+        <div class="modal-img-card"><img  
+      class="modal-img"
+      src="/src/images/modal-ingredients/Ellipse.jpg"
+      alt="icecream"
+      srcset="./images/modal-ingredients/Ellipse.webp 1x, ./images/modal-ingredients/Ellipse@2x.webp 2x"
+    /></div>
+        <ul class="modal-shift-list">
+      <li class="modal-shift-item">
+        <p class="modal-shift-text">kcal</p>
+        <div class="modal-shift-inside">
+          <p class="modal-shift-value">320</p>
+        </div>
+      </li>
+      <li class="modal-shift-item">
+        <p class="modal-shift-text">Prote...</p>
+        <div class="modal-shift-inside">
+          <p class="modal-shift-value">4g</p>
+        </div>
+      </li>
+      <li class="modal-shift-item">
+        <p class="modal-shift-text">Fats</p>
+        <div class="modal-shift-inside">
+          <p class="modal-shift-value">8,2g</p>
+        </div>
+      </li>
+      <li class="modal-shift-item">
+        <p class="modal-shift-text">Carbs</p>
+        <div class="modal-shift-inside">
+          <p class="modal-shift-value">40,4g</p>
+        </div>
+      </li>
+    </ul>
+    <p class="modal-text">Ingredients</p>
+    <ul class="ingredients-list">
+      <li class="ingredients-item">
+        <span class="ingredients-text">Milk</span
+        ><span class="ingredients-text">100ml</span>
+      </li>
+      <li class="ingredients-item">
+        <span class="ingredients-text">Belgian chocolate</span
+        ><span class="ingredients-text">20g</span>
+      </li>
+      <li class="ingredients-item">
+        <span class="ingredients-text">Cream</span
+        ><span class="ingredients-text">150 ml</span>
+      </li>
+      <li class="ingredients-item">
+        <span class="ingredients-text">Cocoa powder</span
+        ><span class="ingredients-text">30g</span>
+      </li>
+      <li class="ingredients-item">
+        <span class="ingredients-text">Sugar</span
+        ><span class="ingredients-text">40g</span>
+      </li>
+      <li class="ingredients-item">
+        <span class="ingredients-text">Vanilla sugar</span
+        ><span class="ingredients-text">10g</span>
+      </li>
+    </ul>
+
+    <form class="modal-form">
+      <label>
+        <input
+          type="text"
+          name="user_name"
+          class="modal-form-input"
+          required
+          pattern="[a-zA-Zа-яА-Я]+"
+          minlength="2"
+          placeholder="Name"
+        />
+      </label>
+      <label>
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-form-input"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="XXX-XXX-XX-XX"
+          placeholder="Phone"
+        />
+      </label>
+      <label>
+        <textarea
+          name="user-comment"
+          class="modal-form-comment"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button type="submit" class="modal-form-submit">Submit</button>
+    </form>
+  </div>
+</div>
