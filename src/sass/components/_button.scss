@@ -47,16 +47,6 @@
   border: 1px solid $accent;
   color: $btn;
 
-  &::after {
-    display: block;
-    content: " ";
-    background-image: url("/src/images/button/button-arrow.svg");
-    background-repeat: no-repeat;
-    margin-left: 4px;
-    width: 12px;
-    height: 10px;
-  }
-
   &:hover {
     background-color: #0a8817;
     border-color: #0a8817;
@@ -65,10 +55,7 @@
   &:focus {
     background-color: #0a8817;
     border-color: #0a8817;
-     color: #fff;
-    &::after {
-      background-image: url("/src/images/button/button-arrow-w.svg");
-    }
+    color: #fff;
   }
 
   &--disabled {
@@ -124,26 +111,13 @@
   border: 1px solid $accent;
   color: $btn;
 
-  &::after {
-    display: block;
-    content: " ";
-    background-image: url("/src/images/button/button-arrow.svg");
-    background-repeat: no-repeat;
-    margin-left: 4px;
-    width: 12px;
-    height: 10px;
-  }
-
   &:hover {
     background-color: #0a8817;
     border-color: #0a8817;
   }
 
   &:focus {
-     color: #fff;
-    &::after {
-      background-image: url("/src/images/button/button-arrow-w.svg");
-    }
+    color: #fff;
   }
 
   &--disabled {
@@ -166,24 +140,14 @@
   border: 2px solid $accent;
   color: $btn;
 
-  &::after {
-    display: block;
-    content: " ";
-    background-image: url("/src/images/button/button-arrow.svg");
-    background-repeat: no-repeat;
-    margin-left: 4px;
-    width: 12px;
-    height: 10px;
-  }
-
   &:hover {
     background-color: #0a8817;
     border-color: #0a8817;
   }
 
   &:focus {
-     color: #fff;
-   fill: #fff;
+    color: #fff;
+    fill: #fff;
   }
 
   &--disabled {
@@ -206,16 +170,6 @@
   border: 1px solid $accent;
   color: #000000;
 
-  &::after {
-    display: block;
-    content: " ";
-    background-image: url("/src/images/button/button-arrow.svg");
-    background-repeat: no-repeat;
-    margin-left: 4px;
-    width: 12px;
-    height: 10px;
-  }
-
   &:hover {
     background-color: #0a8817;
     border-color: #0a8817;
@@ -225,9 +179,6 @@
     background-color: #0a8817;
     border-color: #0a8817;
     color: #fff;
-    &::after {
-      background-image: url("/src/images/button/button-arrow-w.svg");
-    }
   }
 
   &--disabled {
