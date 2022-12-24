@@ -1,7 +1,7 @@
 
 .header {
   height: 64px;
-  background-color: #84a178;
+  background-color: $background;
 }
 
 .header .container {
@@ -54,9 +54,9 @@
   font-size: 16px;
   line-height: 20px;
   align-items: center;
-  color: #fcfcfc;
+  color: $second;
   &:hover {
-    color: #f8d24e;
+    color: $accent;
   }
 }
 
@@ -68,7 +68,7 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
-  color: #fff;
+  color: $second;
 
   @media screen and (min-width: 768px) {
     margin-right: 32px;

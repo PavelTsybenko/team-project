@@ -5,10 +5,10 @@
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
-  border: 2px solid #f8d24e;
+  border: 2px solid $accent;
   border-radius: 10px;
   background-color: initial;
-  color: #000000;
+  color: $btn;
 
   &:hover {
     border-color: #0a8817;
@@ -40,10 +40,10 @@
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
-  background: #f8d24e;
+  background: $accent;
   border-radius: 10px;
-  border: 1px solid #f8d24e;
-  color: #000000;
+  border: 1px solid $accent;
+  color: $btn;
 
   &::after {
     display: block;
@@ -70,8 +70,8 @@
   }
 
   &--disabled {
-    border-color: #ababab;
-    background-color: #ababab;
+    border-color: $third;
+    background-color: $third;
   }
 }
 
@@ -83,7 +83,7 @@
   line-height: calc(15 / 12);
   text-align: center;
   text-decoration-line: underline;
-  color: #f8d24e;
+  color: $accent;
   background-color: initial;
   border: none;
 
@@ -96,7 +96,7 @@
   }
 
   &--disabled {
-    color: #ababab;
+    color: $third;
   }
 
   @media screen and (min-width: 1200px) {
@@ -115,10 +115,10 @@
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
-  background: #f8d24e;
+  background: $accent;
   border-radius: 10px;
-  border: 1px solid #f8d24e;
-  color: #000000;
+  border: 1px solid $accent;
+  color: $btn;
 
   &::after {
     display: block;
@@ -143,7 +143,7 @@
   }
 
   &--disabled {
-    color: #ababab;
+    color: $third;
   }
 }
 
@@ -158,8 +158,8 @@
   line-height: calc(18 / 14);
   background: initial;
   border-radius: 10px;
-  border: 2px solid #f8d24e;
-  color: #000000;
+  border: 2px solid $accent;
+  color: $btn;
 
   &::after {
     display: block;
@@ -184,7 +184,7 @@
   }
 
   &--disabled {
-    color: #ababab;
+    color: $third;
   }
 }
 
@@ -197,9 +197,9 @@
   font-weight: 600;
   font-size: 14px;
   line-height: calc(17 / 14);
-  background: #f8d24e;
+  background: $accent;
   border-radius: 10px;
-  border: 1px solid #f8d24e;
+  border: 1px solid $accent;
   color: #000000;
 
   &::after {
@@ -227,7 +227,7 @@
   }
 
   &--disabled {
-    border-color: #ababab;
-    background-color: #ababab;
+    border-color: $third;
+    background-color: $third;
   }
 }
