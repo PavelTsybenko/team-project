@@ -2,7 +2,54 @@
   &__container {
     padding-top: 60px;
     padding-bottom: 60px;
+
     @media screen and (max-width: 767px) {
+      box-sizing: border-box;
+      width: 320;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+
+      width: 768px;
+      padding-right: 32px;
+      padding-left: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+      margin-right: auto;
+
+      width: 1200px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+    outline: 1px solid red;
+    background-image: url(../images/product/bg/Bg-mobile.jpg);
+    background-size: cover;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/product/bg/Bg-mobile-2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/product/bg/Bg-tablet.jpg);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/product/bg/Bg-tablet-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/product/bg/Bg-desktop.jpg);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/product/bg/Bg-desktop-2x.jpg);
+      }
     }
   }
   &__label {
@@ -32,7 +79,7 @@
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
-    font-size: 34px;
+    font-size: 30px;
     line-height: 1.26;
     text-align: center;
     letter-spacing: 0.04em;
@@ -44,16 +91,19 @@
     }
     @media screen and (min-width: 768px) {
       margin-bottom: 200px;
+      font-size: 34px;
+      line-height: 1.26;
     }
     @media screen and (min-width: 1200px) {
       margin-bottom: 303px;
+      font-size: 36px;
+      line-height: 1.25;
     }
   }
   &__card-set {
     justify-content: center;
     text-align: center;
     @media screen and (max-width: 767px) {
-      width: 320px;
     }
 
     @media screen and (min-width: 768px) {
