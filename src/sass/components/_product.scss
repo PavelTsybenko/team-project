@@ -52,6 +52,7 @@
       display: flex;
     }
     &__item {
+      position: relative;
       border-radius: 24px;
       background-color: #aec6a5;
       @media screen and (max-width: 767px) {
@@ -88,6 +89,29 @@
         @media screen and (min-width: 1200px) {
           margin-right: 29px;
         }
+      }
+    }
+    &__circle {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+
+      border-radius: 50%;
+      @media screen and (max-width: 767px) {
+        left: 40px;
+        top: -97px;
+      }
+      @media screen and (min-width: 768px) {
+        left: 12px;
+        top: -120px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        left: 34px;
+        top: -167px;
+
+        width: 306px;
+        height: 302px;
       }
     }
     &__title {
@@ -129,6 +153,64 @@
       }
     }
     &__btn {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      @media screen and (max-width: 767px) {
+        bottom: 16px;
+      }
+      @media screen and (min-width: 768px) {
+        bottom: 12px;
+      }
+      @media screen and (min-width: 1200px) {
+        bottom: 60px;
+      }
+
+      outline: none;
+      border: 0;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      background-color: transparent;
     }
+  }
+}
+// item bg color
+.item {
+  &__yellow {
+    background-color: #efd478;
+  }
+  &__brown {
+    background-color: #d6936d;
+  }
+}
+// circle color
+.circle {
+  &__green {
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  }
+  &__yellow {
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  }
+  &__brown {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
   }
 }
