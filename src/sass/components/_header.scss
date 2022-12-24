@@ -1,11 +1,19 @@
-
 .header {
   height: 64px;
   background-color: $background;
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 104px;
+  }
 }
 
 .header .container {
   display: flex;
+  align-items: center;
+
   @media screen and (max-width: 767px) {
     padding-top: 12px;
   }
@@ -21,11 +29,36 @@
 }
 
 .header__logo {
+  width: 40px;
+  height: 37px;
+  background-image: url("../images/logo/logo-mob.png");
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url("../images/logo/logo-mob@2x.png");
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 48px;
+    height: 44px;
+    background-image: url("../images/logo/logo-tab.png");
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url("../images/logo/logo-tab@2x.png");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 60px;
+    height: 65px;
+    background-image: url("../images/logo/logo-desktop.png");
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url("../images/logo/logo-desktop@2x.png");
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 308px;
   }
-}
-.header__img {
 }
 
 .nav {
@@ -54,9 +87,9 @@
   font-size: 16px;
   line-height: 20px;
   align-items: center;
-  color: $second;
+  color: #fcfcfc;
   &:hover {
-    color: $accent;
+    color: #f8d24e;
   }
 }
 
@@ -68,7 +101,7 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
-  color: $second;
+  color: #fff;
 
   @media screen and (min-width: 768px) {
     margin-right: 32px;
@@ -89,5 +122,6 @@
     margin-left: auto;
   }
 }
+
 
 
